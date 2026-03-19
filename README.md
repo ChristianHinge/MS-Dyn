@@ -2,15 +2,6 @@
 
 MC-Dyn is an open-source pipeline for automated, harmonized extraction of Time-Activity Curves (TACs) from dynamic whole-body PET/CT studies. It is designed to standardize the technical decisions that confound cross-study comparisons, and to produce simple, privacy-safe outputs that are straightforward to pool across sites.
 
-## Features
-
-- Accepts **DICOM** or **NIfTI + BIDS JSON sidecar** input
-- Automated CT organ segmentation via [MOOSE](https://github.com/ENHANCE-PET/MOOSE) (120+ structures)
-- Aortic input function extraction with 4 anatomical segments × 2 VOI modes (1 mL cylindrical, full segment)
-- Outputs flat CSV files — inherently anonymous under GDPR (no direct identifiers)
-- Assigns anonymized BIDS-like case IDs (`sub-001_ses-01`) from DICOM PatientID + StudyDate
-- Checkpointed pipeline — resumes from the last completed stage by default
-
 ## Installation
 
 ```bash
